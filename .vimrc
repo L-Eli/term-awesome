@@ -4,7 +4,6 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-" Plugin 'kien/ctrlp.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-airline/vim-airline'
@@ -14,6 +13,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
+
+set nowrap
+set sidescroll=1
 
 set encoding=utf-8
 set ma " modifiable
@@ -69,9 +71,9 @@ nnoremap <silent> <C-h> :bp <CR>
 nnoremap <silent> <C-l> :bn <CR>
 
 " NERDTree
-autocmd VimEnter * NERDTree
 nnoremap <silent> <C-a> :NERDTreeToggle <CR>
-let g:NERDTreeChDirMode = 2 
+let g:NERDTreeChDirMode=2
+let NERDTreeShowHidden=1
 
 " CtrlP
 let g:ctrlp_map = '<c-p>'
