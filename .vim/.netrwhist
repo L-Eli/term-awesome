@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/.amd_mnt/10.4.1.1/vol/home/pixuser/nealhuang/myprofile/zsh-libs'
-let g:netrw_dirhist_2='/.amd_mnt/10.4.1.6/vol/home/pixuser/nealhuang/.vim/bundle/Vundle.vim'
-let g:netrw_dirhist_3='/.amd_mnt/10.4.1.6/vol/home/pixuser/nealhuang/.vim/bundle'
-let g:netrw_dirhist_4='/.amd_mnt/10.4.1.6/vol/home/pixuser/nealhuang/.vim/bundle/Vundle.vim'
