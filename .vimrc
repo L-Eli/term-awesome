@@ -1,4 +1,6 @@
 set nocompatible
+
+filetype plugin indent on
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
@@ -12,8 +14,6 @@ Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 call vundle#end()
-
-filetype plugin indent on
 
 set sidescroll=1
 
