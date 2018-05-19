@@ -163,7 +163,7 @@ tmux_conf_theme_right_separator_sub=''  #   PowerlineSymbols.otf font
 #     - #{username_ssh}
 tmux_conf_theme_status_left='🕒 → %H:%M , %d %b | ❐  #S '
 #old tmux_conf_theme_status_left=' ❐ #S '
-tmux_conf_theme_status_right='#{prefix}#{pairing}  LOAD #{loadavg} | #{username} | #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},}'
+tmux_conf_theme_status_right='#{prefix}#{pairing}  LOAD #{loadavg} | #{username} | #{battery_status} #{battery_bar} #{battery_percentage}'
 #old tmux_conf_theme_status_right='#{prefix}#{pairing} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , #{loadavg} | #{username}#{root} | #{hostname} '
 
 # status left style
