@@ -13,6 +13,19 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'ervandew/supertab'
+
+" HTML
+Plugin 'mattn/emmet-vim'
+Plugin 'othree/html5.vim'
+Plugin 'alvan/vim-closetag'
+
+" Python
+Plugin 'davidhalter/jedi-vim'
+Plugin 'hdima/python-syntax'
+Plugin 'indentpython.vim'
+
 call vundle#end()
 
 set sidescroll=1
@@ -40,13 +53,6 @@ match LeaderTab /^\t/
 
 hi OverLength ctermbg=DarkGray ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
-
-au BufNewFile,BufRead *.py
-	\ set tabstop=4 |
-	\ set softtabstop=4 |
-	\ set shiftwidth=4 |
-	\ set textwidth=79 |
-	\ set fileformat=unix |
 
 au BufNewFile,BufRead *.php,*.json,*.phtml,*.html,*.css,*.js,*.cron
 	\ set tabstop=4 |
@@ -84,3 +90,6 @@ let g:airline#extensions#tabline#buffer_nr_show=1
 
 " Gutter
 set updatetime=500
+
+" Emmet
+let g:user_emmet_leader_key=','
