@@ -21,7 +21,12 @@ Plugin 'mattn/emmet-vim'
 Plugin 'othree/html5.vim'
 Plugin 'alvan/vim-closetag'
 
+" JS
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'posva/vim-vue'
+
 " Python
+Plugin 'nvie/vim-flake8'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'hdima/python-syntax'
 Plugin 'indentpython.vim'
@@ -54,11 +59,16 @@ match LeaderTab /^\t/
 hi OverLength ctermbg=DarkGray ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
-au BufNewFile,BufRead *.php,*.json,*.phtml,*.html,*.css,*.js,*.cron
+au BufNewFile,BufRead *.php,*.py
 	\ set tabstop=4 |
 	\ set softtabstop=4 |
 	\ set shiftwidth=4 |
 	\ set textwidth=119 |
+
+au BufNewFile,BufRead *.json,*.html,*.css,*.js,*.vue
+        \ set tabstop=2 |
+        \ set softtabstop=2 |
+        \ set shiftwidth=2 |
 
 set foldmethod=indent
 set foldlevel=99
@@ -93,3 +103,11 @@ set updatetime=500
 
 " Emmet
 let g:user_emmet_leader_key=','
+
+" Auto Completion
+if !exists('g:neocomplcache_omni_functions')
+  let g:neocomplcache_omni_functions = {}
+endif
+
+let g:neocomplcache_omni_functions.python = 'jedi#complete'
+let g:jedi#popup_on_dot = 1
