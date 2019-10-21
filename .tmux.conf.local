@@ -71,6 +71,7 @@ tmux_conf_theme_pane_active_indicator='#00afff'         # light blue
 
 # status line style
 tmux_conf_theme_message_fg='#000000'                    # black
+#tmux_conf_theme_message_bg='#ffff00'                    # yellow
 tmux_conf_theme_message_bg='#ffff00'                    # yellow
 tmux_conf_theme_message_attr='bold'
 
@@ -162,9 +163,9 @@ tmux_conf_theme_right_separator_sub=''  #   PowerlineSymbols.otf font
 #     - #{username}
 #     - #{username_ssh}
 tmux_conf_theme_status_left='🕒 → %H:%M , %d %b | ❐  #S '
-#old tmux_conf_theme_status_left=' ❐ #S '
+#tmux_conf_theme_status_left=' ❐ #S '
 tmux_conf_theme_status_right='#{prefix}#{pairing}  LOAD #{loadavg} | #{username} | #{battery_status} #{battery_bar} #{battery_percentage}'
-#old tmux_conf_theme_status_right='#{prefix}#{pairing} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , #{loadavg} | #{username}#{root} | #{hostname} '
+#tmux_conf_theme_status_right='#{prefix}#{pairing} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , #{loadavg} | #{username}#{root} | #{hostname} '
 
 # status left style
 tmux_conf_theme_status_left_fg='#ff9a00,#660066,#e4e4e4'
@@ -293,3 +294,7 @@ bind M-b send-prefix -2
 if-shell 'uname | grep -qi Cygwin' 'bind -T root C-v run "cat /dev/clipboard | tmux load-buffer - ; tmux paste-buffer"'
 
 
+unbind C-b
+set-option -g prefix `
+bind a send-prefix
+bind ` last-window
