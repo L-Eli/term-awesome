@@ -15,6 +15,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'ervandew/supertab'
+Plugin 'matze/vim-move'
+Plugin 'majutsushi/tagbar'
+
 
 " HTML
 Plugin 'mattn/emmet-vim'
@@ -104,10 +107,24 @@ set updatetime=500
 " Emmet
 let g:user_emmet_leader_key=','
 
-" Auto Completion
-if !exists('g:neocomplcache_omni_functions')
-  let g:neocomplcache_omni_functions = {}
-endif
+" Move
+vmap <C-j> <Plug>MoveBlockDown
+vmap <C-k> <Plug>MoveBlockUp
+nmap <C-j> <Plug>MoveLineDown
+nmap <C-k> <Plug>MoveLineUp
 
-let g:neocomplcache_omni_functions.python = 'jedi#complete'
-let g:jedi#popup_on_dot = 1
+" Tagbar
+nmap <C-t> :Tagbar<CR>
+let g:tagbar_width = winwidth('%') / 5
+
+" Start Up
+function StartUp()
+    if ''==@%                           " No filename
+        NERDTree
+        Tagbar
+    elseif 0==filereadable(@%)          " File doesn't exists
+    elseif 1==line('$') && 1==col('$')  " File is empty
+    endif
+endfunction
+
+autocmd VimEnter * call StartUp()
