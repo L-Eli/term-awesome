@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/autoload')
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
@@ -22,10 +23,6 @@ Plug 'tpope/vim-fugitive'
 
 " Python
 Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2'
-Plug 'HansPinckaers/ncm2-jedi'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
 
 " JS
 
@@ -33,6 +30,9 @@ Plug 'ncm2/ncm2-path'
 Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 Plug 'alvan/vim-closetag'
+
+" CSS
+Plug 'ap/vim-css-color'
 call plug#end()
 
 
@@ -41,7 +41,9 @@ nnoremap <silent> <C-a> :NERDTreeToggle <CR>
 
 let NERDTreeShowHidden=3
 
-"autocmd VimEnter * NERDTreeToggle
+
+" nerdcommenter
+nmap <C-_> <Leader>c<space>
 
 
 " syntastic
@@ -105,28 +107,6 @@ let g:NERDTreeExtensionHighlightColor['vue']='42b883'
 
 " git gutter
 set updatetime=100
-
-
-" ncm2
-autocmd BufEnter * call ncm2#enable_for_buffer()
-inoremap <c-c> <ESC>
-
-set completeopt=menuone,noselect,noinsert
-set shortmess+=c
-
-let ncm2#popup_delay=5
-let ncm2#complete_length=[[1, 1]]
-let g:ncm2#matcher='substrfuzzy'
-
-
-" jedi (disable all jedi-vim's auto completeion)
-let g:jedi#auto_initialization=1
-let g:jedi#completions_enabled=0
-let g:jedi#auto_vim_configuration=0
-let g:jedi#smart_auto_mappings=0
-let g:jedi#popup_on_dot=0
-let g:jedi#completions_command=""
-let g:jedi#show_call_signatures="1"
 
 
 " emmet
