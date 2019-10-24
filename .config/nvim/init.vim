@@ -103,8 +103,8 @@ let g:NERDTreeExtensionHighlightColor={}
 let g:NERDTreeExtensionHighlightColor['vue']='42b883'
 
 
-" gutter
-set updatetime=500
+" git gutter
+set updatetime=100
 
 
 " ncm2
