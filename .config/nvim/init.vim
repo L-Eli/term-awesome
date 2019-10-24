@@ -4,14 +4,17 @@ Plug 'scrooloose/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'altercation/vim-colors-solarized'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kien/ctrlp.vim'
 Plug 'ervandew/supertab'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'matze/vim-move'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Themes
+Plug 'arcticicestudio/nord-vim'
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -56,7 +59,7 @@ let g:syntastic_html_tidy_quiet_messages={"level":"warnings"}
 " tagbar
 nmap <silent> <C-t> :TagbarToggle <CR>
 
-let g:tagbar_width = winwidth('%') / 5
+let g:tagbar_width=winwidth('%') / 5
 
 "autocmd VimEnter * TagbarToggle
 
@@ -72,9 +75,10 @@ nnoremap <Leader>5 :bfirst<CR>:4bn<CR>
 nnoremap <Leader>6 :bfirst<CR>:5bn<CR>
 nnoremap <Leader>7 :bfirst<CR>:6bn<CR>
 nnoremap <Leader>8 :bfirst<CR>:7bn<CR>
-nnoremap <Leader>9 :blast
+nnoremap <Leader>9 :blast<CR>
+nnoremap <Leader>w :bd<CR>
 
-let g:airline_theme='cobalt2'
+let g:airline_theme='nord'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 
@@ -84,8 +88,8 @@ let g:solarized_termcolors=256
 
 
 " supertab
-let g:SuperTabMappingForward = '<s-tab>'
-let g:SuperTabMappingBackward = '<tab>'
+let g:SuperTabMappingForward='<s-tab>'
+let g:SuperTabMappingBackward='<tab>'
 
 
 " move
@@ -93,6 +97,10 @@ vmap <C-j> <Plug>MoveBlockDown
 vmap <C-k> <Plug>MoveBlockUp
 nmap <C-j> <Plug>MoveLineDown
 nmap <C-k> <Plug>MoveLineUp
+
+" vim nerdtree syntastic highlight
+let g:NERDTreeExtensionHighlightColor={}
+let g:NERDTreeExtensionHighlightColor['vue']='42b883'
 
 
 " gutter
@@ -125,6 +133,10 @@ let g:jedi#show_call_signatures="1"
 let g:user_emmet_leader_key=','
 
 
+" closetag
+let g:closetag_filenames='*.html,*.vue'
+
+
 " settings
 
 set encoding=UTF-8
@@ -140,7 +152,7 @@ set backspace=indent,eol,start
 
 """ style
 syntax enable
-colorscheme solarized
+colorscheme nord
 set background=dark
 
 """ fold
