@@ -282,6 +282,8 @@ bind M-b send-prefix -2
 if-shell 'uname | grep -qi Cygwin' 'bind -T root C-v run "cat /dev/clipboard | tmux load-buffer - ; tmux paste-buffer"'
 
 unbind C-b
+unbind -n C-j
+unbind -n C-k
 set-option -g prefix `
 bind a send-prefix
 bind ` last-window
