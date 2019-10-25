@@ -143,12 +143,6 @@ echo "🏆 Copy init.vim to ~/.config/nvim/init.vim successfully!"
 echo ""
 echo "--------------------------------------------------"
 
-# Source .zshrc
-/usr/local/bin/zsh
-echo "Sourcing .zshrc file ......"
-source $HOME/./.zshrc
-echo "🏆 Sourcing .zshrc file successfully!"
-
 # Change default sh to zsh
 echo "Changing default shell to zsh ......"
 sudo chsh -s /usr/local/bin/zsh
@@ -160,6 +154,10 @@ echo "Installing Neovim's plugins ......"
 nvim -c "PlugInstall"
 echo "🏆 Neovim's plugins installed successfully!"
 echo ""
+
+# Switch to zsh
+echo ""
+/usr/local/bin/zsh
 
 echo "🍺 Congratulations! Installed successfully!"
 exit 0
