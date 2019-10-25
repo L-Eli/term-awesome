@@ -284,6 +284,7 @@ if-shell 'uname | grep -qi Cygwin' 'bind -T root C-v run "cat /dev/clipboard | t
 unbind C-b
 unbind -n C-j
 unbind -n C-k
-set-option -g prefix `
 bind a send-prefix
 bind ` last-window
+set-option -g prefix `
+set-option repeat-time 0
