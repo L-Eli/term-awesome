@@ -1,13 +1,8 @@
 #!/bin/bash
 
-# Permission required
-# if [[ $EUID > 0 ]]
-  # then echo "Please run as root."
-  # exit
-# fi
-
 echo "***********************************"
 echo "*                                 *"
+echo "*  Name:    Term Awesome          *"
 echo "*  Author:  Eli Lin               *"
 echo "*  Version: 1.0.0                 *"
 echo "*  Date:    2019/10/25            *"
@@ -158,9 +153,7 @@ nvim -c "PlugInstall"
 echo "🏆 Neovim's plugins installed successfully!"
 echo ""
 
-# Switch to zsh
+echo "--------------------------------------------------"
 echo ""
-/usr/local/bin/zsh
-
-echo "🍺 Congratulations! Installed successfully!"
+echo "🍺🍺🍺 Congratulations! Installed successfully!"
 exit 0
