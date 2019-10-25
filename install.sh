@@ -131,6 +131,9 @@ echo "Copying .tmux.conf.local into home directory ......"
 rm $HOME/.tmux.conf.local
 cp .tmux.conf.local $HOME/
 echo "🏆 Copy .tmux.conf.local to home directory successfully!"
+echo "Sourcing .tmux.conf ......."
+tmux source $HOME/.tmux.conf
+echo "🏆 Sourced .tmux.conf successfully!"
 echo ""
 echo "--------------------------------------------------"
 
