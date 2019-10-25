@@ -146,14 +146,15 @@ echo "Changing default shell to zsh ......"
 sudo chsh -s /usr/local/bin/zsh
 echo "🏆 Default shell change to zsh successfully!"
 echo ""
+echo "--------------------------------------------------"
 
 # Neovim plug install
 echo "Installing Neovim's plugins ......"
 nvim -c "PlugInstall"
 echo "🏆 Neovim's plugins installed successfully!"
 echo ""
-
 echo "--------------------------------------------------"
+
 echo ""
 echo "🍺🍺🍺 Congratulations! Installed successfully!"
 exit 0
