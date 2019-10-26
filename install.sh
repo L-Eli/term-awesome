@@ -120,6 +120,7 @@ echo ""
   # Installing zsh plugins
   echo ""
   echo "Installing zsh plugins ......"
+  echo ""
   rm -rf $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
   echo ""
