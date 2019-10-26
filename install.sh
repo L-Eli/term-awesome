@@ -187,6 +187,7 @@ echo ""
 echo "-------------------------------------------------------"
 
 # Change default sh to zsh
+echo ""
 echo "Changing default shell to zsh ......"
 sudo chsh -s /usr/local/bin/zsh
 echo "🏆 Default shell change to zsh successfully!"
@@ -203,6 +204,7 @@ echo ""
 echo "-------------------------------------------------------"
 
 # Neovim plug install
+echo ""
 echo "Installing Neovim's plugins ......"
 usr/local/bin/nvim -c "PlugInstall"
 echo "🏆 Neovim's plugins installed successfully!"
