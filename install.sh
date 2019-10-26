@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo "***********************************"
-echo "*                                 *"
-echo "*  Name:    Term Awesome          *"
-echo "*  Author:  Eli Lin               *"
-echo "*  Version: 1.0.0                 *"
-echo "*  Date:    2019/10/25            *"
-echo "*                                 *"
-echo "***********************************"
+echo "*******************************************************"
+echo "*                                                     *"
+echo "*  Name:    Term Awesome                              *"
+echo "*  Author:  Eli Lin                                   *"
+echo "*  Version: 1.0.0                                     *"
+echo "*  Date:    2019/10/25                                *"
+echo "*                                                     *"
+echo "*******************************************************"
 echo ""
 
 # Installing homebrew
