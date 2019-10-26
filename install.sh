@@ -105,7 +105,7 @@ echo ""
   # Installing oh my tmux
   echo ""
   echo "Installing oh-my-tmux ......"
-  if [ ! -d "$HOME/.tmux" ]; then
+  if [ ! -d $HOME"/.tmux" ]; then
     echo "⚠️  You're not installed oh-my-tmux already."
     git clone https://github.com/gpakosz/.tmux.git $HOME/.tmux
     ln -s -f $HOME/.tmux/.tmux.conf
@@ -149,7 +149,7 @@ echo ""
   # Copy .zshrc
   echo ""
   echo "Copying .zshrc into home directory......"
-  if [ -f "${$HOME}/.zshrc" ]; then
+  if [ -f $HOME"/.zshrc" ]; then
     rm $HOME/.zshrc
   fi
   cp .zshrc $HOME/
@@ -160,7 +160,7 @@ echo ""
   # Copy .tmux.conf.local
   echo ""
   echo "Copying .tmux.conf.local into home directory ......"
-  if [ -f "${$HOME}/.tmux.conf.local" ]; then
+  if [ -f $HOME"/.tmux.conf.local" ]; then
     rm $HOME/.tmux.conf.local
   fi
   cp .tmux.conf.local $HOME/
@@ -179,13 +179,13 @@ echo ""
   # Copy neovim config
   echo ""
   echo "Copying init.vim into ~/.config/nvim/init.vim"
-  if [ -f "${$HOME}/.config/nvim/init.vim" ]; then
+  if [ -f $HOME"/.config/nvim/init.vim" ]; then
     rm $HOME/.config/nvim/init.vim
   fi
-  if [ ! -d "${$HOME}/.config" ]; then
+  if [ ! -d $HOME"/.config" ]; then
     mkdir $HOME/.config
   fi
-  if [ ! -d "${$HOME}/.config/nvim" ]; then
+  if [ ! -d $HOME"/.config/nvim" ]; then
     mkdir $HOME/.config/nvim
   fi
   cp .config/nvim/init.vim $HOME/.config/nvim/init.vim
