@@ -177,5 +177,10 @@ echo ""
 echo "--------------------------------------------------"
 
 echo ""
-echo "🍺🍺🍺 Congratulations! Installed successfully!"
+echo "*******************************************************"
+echo "*                                                     *"
+echo "*  🍺🍺🍺 Congratulations! Installed successfully!    *"
+echo "*  Please relaunch iterm2!                            *"
+echo "*                                                     *"
+echo "*******************************************************"
 exit 0
