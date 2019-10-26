@@ -159,7 +159,7 @@ echo ""
   # Copy .tmux.conf.local
   echo ""
   echo "Copying .tmux.conf.local into home directory ......"
-  if [ -f "${$HOME}/.zshrc" ]; then
+  if [ -f "${$HOME}/.tmux.conf.local" ]; then
     rm $HOME/.tmux.conf.local
   fi
   cp .tmux.conf.local $HOME/
