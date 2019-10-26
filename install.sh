@@ -232,9 +232,11 @@ echo ""
     "html"
     "css"
   )
-  for i in "${packages[@]}"; do
-    /usr/local/bin/nvim +"CocInstall ${i}"
+  dependencies=""
+  for i in "${coc_dependencies[@]}"; do
+    dependencies="${dependencies} coc-${i}"
   done
+  /usr/local/bin/nvim +"CocInstall ${dependencies}"
   echo "🏆 Coc's plugins installed successfully!"
   echo ""
   echo "-------------------------------------------------------"
