@@ -70,6 +70,19 @@ fi
 echo ""
 echo "--------------------------------------------------"
 
+# Installing powerlevel9k
+echo ""
+echo "Installing powerlevel9k theme ......"
+if [ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel9k" ]; then
+  echo "⚠️  You're not installed powerlevel9k already."
+  git clone https://github.com/Powerlevel9k/powerlevel9k.git $HOME/.oh-my-zsh/custom/themes/powerlevel9k
+  echo "🏆 Powerlevel9k installed successfully!"
+else
+  echo "👍 Powerlevel9k already installed!"
+fi
+echo ""
+echo "--------------------------------------------------"
+
 # Installing oh my tmux
 echo ""
 echo "Installing oh-my-tmux ......"
