@@ -175,6 +175,12 @@ echo "Copying init.vim into ~/.config/nvim/init.vim"
 if [ -f "${$HOME}/.config/nvim/init.vim" ]; then
   rm $HOME/.config/nvim/init.vim
 fi
+if [ ! -d "${$HOME}/.config" ]; then
+  mkdir $HOME/.config
+fi
+if [ ! -d "${$HOME}/.config/nvim" ]; then
+  mkdir $HOME/.config/nvim
+fi
 cp .config/nvim/init.vim $HOME/.config/nvim/init.vim
 echo "🏆 Copy init.vim to ~/.config/nvim/init.vim successfully!"
 echo ""
