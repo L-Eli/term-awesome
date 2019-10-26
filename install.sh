@@ -31,7 +31,7 @@ if [ $os == 'darwin' ]; then
     echo "👍 Homebrew already installed!"
   fi
   echo ""
-  echo "--------------------------------------------------"
+  echo "-------------------------------------------------------"
 
   packages=(
     "zsh"
@@ -54,7 +54,7 @@ if [ $os == 'darwin' ]; then
       echo "👍 ${i} already installed!"
     fi
     echo ""
-    echo "--------------------------------------------------"
+    echo "-------------------------------------------------------"
   done
 fi
 
@@ -69,7 +69,7 @@ else
   echo "👍 oh-my-zsh already installed!"
 fi
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # Installing powerlevel9k
 echo ""
@@ -82,7 +82,7 @@ else
   echo "👍 Powerlevel9k already installed!"
 fi
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # Installing oh my tmux
 echo ""
@@ -96,7 +96,7 @@ else
   echo "👍 oh-my-tmux already installed!"
 fi
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # Installing zsh plugins
 echo ""
@@ -108,7 +108,7 @@ rm -rf $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 echo "🏆 Plugins installed successfully!"
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # Installing pip3 neovim client
 echo ""
@@ -116,7 +116,7 @@ echo "Installing Python Neovim client ......"
 pip3 install neovim
 echo "🏆 Python Neovim installed successfully!"
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # Installing node neovim package
 echo ""
@@ -124,7 +124,7 @@ echo "Installing Node Neovim package ......"
 npm install -g neovim
 echo "🏆 Python Neovim installed successfully!"
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # Copy .zshrc
 echo ""
@@ -135,7 +135,7 @@ fi
 cp .zshrc $HOME/
 echo "🏆 Copy .zshrc to home directory successfully!"
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # Copy .tmux.conf.local
 echo ""
@@ -149,7 +149,7 @@ echo "Sourcing .tmux.conf ......."
 tmux source $HOME/.tmux.conf
 echo "🏆 Sourced .tmux.conf successfully!"
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # Copy neovim config
 echo ""
@@ -160,21 +160,21 @@ fi
 cp .config/nvim/init.vim $HOME/.config/nvim/init.vim
 echo "🏆 Copy init.vim to ~/.config/nvim/init.vim successfully!"
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # Change default sh to zsh
 echo "Changing default shell to zsh ......"
 sudo chsh -s /usr/local/bin/zsh
 echo "🏆 Default shell change to zsh successfully!"
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 # Neovim plug install
 echo "Installing Neovim's plugins ......"
 usr/local/bin/nvim -c "PlugInstall"
 echo "🏆 Neovim's plugins installed successfully!"
 echo ""
-echo "--------------------------------------------------"
+echo "-------------------------------------------------------"
 
 echo ""
 echo "*******************************************************"
