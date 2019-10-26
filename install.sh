@@ -120,6 +120,7 @@ echo ""
   # Installing zsh plugins
   echo ""
   echo "Installing zsh plugins ......"
+  echo ""
   rm -rf $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
   echo ""
@@ -148,9 +149,7 @@ echo ""
   # Copy .zshrc
   echo ""
   echo "Copying .zshrc into home directory......"
-  if [ -f "${$HOME}/.zshrc" ]; then
-    rm $HOME/.zshrc
-  fi
+  rm $HOME/.zshrc
   cp .zshrc $HOME/
   echo "🏆 Copy .zshrc to home directory successfully!"
   echo ""
@@ -159,9 +158,7 @@ echo ""
   # Copy .tmux.conf.local
   echo ""
   echo "Copying .tmux.conf.local into home directory ......"
-  if [ -f "${$HOME}/.tmux.conf.local" ]; then
-    rm $HOME/.tmux.conf.local
-  fi
+  rm $HOME/.tmux.conf.local
   cp .tmux.conf.local $HOME/
   echo "🏆 Copy .tmux.conf.local to home directory successfully!"
   echo ""
@@ -187,6 +184,7 @@ echo ""
   if [ ! -d "${$HOME}/.config/nvim" ]; then
     mkdir $HOME/.config/nvim
   fi
+  rm $HOME/.config/nvim/init.vim
   cp .config/nvim/init.vim $HOME/.config/nvim/init.vim
   echo "🏆 Copy init.vim to ~/.config/nvim/init.vim successfully!"
   echo ""
