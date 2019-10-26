@@ -40,6 +40,7 @@ if [ $os == 'darwin' ]; then
     "node"
     "python3"
     "ctags"
+    "neovim"
   )
 
   # Installing packages
