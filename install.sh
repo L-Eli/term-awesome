@@ -156,7 +156,7 @@ echo "--------------------------------------------------"
 
 # Neovim plug install
 echo "Installing Neovim's plugins ......"
-nvim -c "PlugInstall"
+usr/local/bin/nvim -c "PlugInstall"
 echo "🏆 Neovim's plugins installed successfully!"
 echo ""
 echo "--------------------------------------------------"
