@@ -9,5 +9,8 @@
 ## Installing
 
 ```shell=
+$ cd
+$ git clone git@github.com:L-Eli/term-awesome.git
+$ cd term-awesome
 $ ./install.sh
 ```
