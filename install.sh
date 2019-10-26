@@ -145,6 +145,11 @@ if [ -f "${$HOME}/.zshrc" ]; then
 fi
 cp .tmux.conf.local $HOME/
 echo "🏆 Copy .tmux.conf.local to home directory successfully!"
+echo ""
+echo "-------------------------------------------------------"
+
+# Sourcing .tmux.conf
+echo ""
 echo "Sourcing .tmux.conf ......."
 tmux source $HOME/.tmux.conf
 echo "🏆 Sourced .tmux.conf successfully!"
