@@ -198,7 +198,7 @@ echo "-------------------------------------------------------"
 # Installing vim plug
 echo ""
 echo "Installing vim plug ......"
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo "🏆 Vim plug installed successfully!"
 echo ""
