@@ -114,7 +114,9 @@ echo "--------------------------------------------------"
 # Copy .zshrc
 echo ""
 echo "Copying .zshrc into home directory......"
-rm $HOME/.zshrc
+if [ -f "${$HOME}/.zshrc" ]; then
+  rm $HOME/.zshrc
+fi
 cp .zshrc $HOME/
 echo "🏆 Copy .zshrc to home directory successfully!"
 echo ""
@@ -123,7 +125,9 @@ echo "--------------------------------------------------"
 # Copy .tmux.conf.local
 echo ""
 echo "Copying .tmux.conf.local into home directory ......"
-rm $HOME/.tmux.conf.local
+if [ -f "${$HOME}/.zshrc" ]; then
+  rm $HOME/.tmux.conf.local
+fi
 cp .tmux.conf.local $HOME/
 echo "🏆 Copy .tmux.conf.local to home directory successfully!"
 echo "Sourcing .tmux.conf ......."
@@ -135,7 +139,9 @@ echo "--------------------------------------------------"
 # Copy neovim config
 echo ""
 echo "Copying init.vim into ~/.config/nvim/init.vim"
-rm $HOME/.config/nvim/init.vim
+if [ -f "${$HOME}/.config/nvim/init.vim" ]; then
+  rm $HOME/.config/nvim/init.vim
+fi
 cp .config/nvim/init.vim $HOME/.config/nvim/init.vim
 echo "🏆 Copy init.vim to ~/.config/nvim/init.vim successfully!"
 echo ""
