@@ -246,7 +246,7 @@ echo ""
   echo "*******************************************************"
   echo "*                                                     *"
   echo "*  🍺🍺🍺 Congratulations! Installed successfully!    *"
-  echo "*  Please relaunch iterm2!                            *"
+  echo "*  Please relaunch iTerm2!                            *"
   echo "*                                                     *"
   echo "*******************************************************"
   exit 0
