@@ -39,6 +39,7 @@ if [ $os == 'darwin' ]; then
     "git"
     "node"
     "python3"
+    "ctags"
   )
 
   # Installing packages
