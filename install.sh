@@ -213,7 +213,7 @@ echo ""
   # Neovim plug install
   echo ""
   echo "Installing Neovim's plugins ......"
-  /usr/local/bin/nvim -c "PlugInstall"
+  /usr/local/bin/nvim -c "PlugInstall" &
   echo "🏆 Neovim's plugins installed successfully!"
   echo ""
   echo "-------------------------------------------------------"
@@ -236,7 +236,7 @@ echo ""
   for i in "${coc_dependencies[@]}"; do
     dependencies="${dependencies} coc-${i}"
   done
-  /usr/local/bin/nvim +"CocInstall ${dependencies}"
+  /usr/local/bin/nvim +"CocInstall ${dependencies}" &
   echo "🏆 Coc's plugins installed successfully!"
   echo ""
   echo "-------------------------------------------------------"
