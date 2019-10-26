@@ -193,6 +193,15 @@ echo "🏆 Default shell change to zsh successfully!"
 echo ""
 echo "-------------------------------------------------------"
 
+# Installing vim plug
+echo ""
+echo "Installing vim plug ......"
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+echo "🏆 Vim plug installed successfully!"
+echo ""
+echo "-------------------------------------------------------"
+
 # Neovim plug install
 echo "Installing Neovim's plugins ......"
 usr/local/bin/nvim -c "PlugInstall"
