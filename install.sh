@@ -40,7 +40,6 @@ if [ $os == 'darwin' ]; then
     "node"
     "python3"
     "ctags"
-    "neovim"
   )
 
   # Installing packages
@@ -57,6 +56,19 @@ if [ $os == 'darwin' ]; then
     echo ""
     echo "-------------------------------------------------------"
   done
+
+  # Installing neovim
+  echo ""
+  echo "Installing neovim ......"
+  if ! [ -f "/usr/local/bin/nvim" ]; then
+    echo "⚠️  You're not installed neovim already."
+    brew install neovim
+    echo "🏆 Neovim installed successfully!"
+  else
+    echo "👍 Neovim already installed!"
+  fi
+  echo ""
+  echo "-------------------------------------------------------"
 fi
 
 # Installing oh my zsh
