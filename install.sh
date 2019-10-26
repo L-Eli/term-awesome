@@ -212,6 +212,28 @@ echo "🏆 Neovim's plugins installed successfully!"
 echo ""
 echo "-------------------------------------------------------"
 
+# Installing Coc dependencies
+echo ""
+echo "Installing Coc's dependencies ......"
+coc_dependencies=(
+  "python"
+  "phpls"
+  "tsserver"
+  "json"
+  "eslint"
+  "prettier"
+  "vetur"
+  "html"
+  "css"
+)
+for i in "${packages[@]}"; do
+  /usr/local/bin/nvim +"CocInstall ${i}"
+done
+echo "🏆 Coc's plugins installed successfully!"
+echo ""
+echo "-------------------------------------------------------"
+
+
 echo ""
 echo "*******************************************************"
 echo "*                                                     *"
