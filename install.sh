@@ -109,11 +109,11 @@ echo ""
     echo "⚠️  You're not installed oh-my-tmux already."
     git clone https://github.com/gpakosz/.tmux.git $HOME/.tmux
     ln -s -f $HOME/.tmux/.tmux.conf
-    cp $HOME/.tmux/.tmux.conf $HOME
     echo "🏆 oh-my-tmux installed successfully!"
   else
     echo "👍 oh-my-tmux already installed!"
   fi
+  cp $HOME/.tmux/.tmux.conf $HOME/.tmux.conf
   echo ""
   echo "-------------------------------------------------------"
   
