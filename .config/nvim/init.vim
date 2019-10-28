@@ -156,7 +156,7 @@ au BufNewFile,BufRead *.php,*.py
   \ set softtabstop=4 |
   \ set shiftwidth=4 |
 
-au BufNewFile,BufRead *.json,*.html,*.css,*.js,*.vue
+au BufNewFile,BufRead *.json,*.html,*.css,*.js,*.vue,*.sh
   \ set tabstop=2 |
   \ set softtabstop=2 |
   \ set shiftwidth=2 |
