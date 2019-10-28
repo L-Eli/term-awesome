@@ -117,16 +117,31 @@ echo ""
   echo ""
   echo "-------------------------------------------------------"
   
+
   # Installing zsh plugins
+
+  # Installing zsh-autosuggestions
   echo ""
   echo "Installing zsh plugins ......"
+  if [ ! -d $HOME"/.oh-my-zsh/custom/plugins/zsh-autosuggestions" ]; then
+    echo "⚠️  You're not installed zsh-autosuggestions already."
+    git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+    echo "🏆 zsh-autosuggestions installed successfully!"
+  else
+    echo "👍 zsh-autosuggestions already installed!"
+  fi
   echo ""
-  rm -rf $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-  git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+  echo "-------------------------------------------------------"
+
+  # Installing zsh-syntax-highlighting
   echo ""
-  rm -rf $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-  echo "🏆 Plugins installed successfully!"
+  if [ ! -d $HOME"/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]; then
+    echo "⚠️  You're not installed zsh-syntax-highlighting already."
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+    echo "🏆 zsh-syntax-highlighting installed successfully!"
+  else
+    echo "👍 zsh-syntax-highlighting already installed!"
+  fi
   echo ""
   echo "-------------------------------------------------------"
   
