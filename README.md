@@ -6,6 +6,8 @@
 2. Install [Nord Iterm2 color scheme](https://github.com/arcticicestudio/nord-iterm2)
 3. Install [Nerd Font](https://github.com/ryanoasis/nerd-fonts) (I use `Fira Code` for awesome operator display!)
 
+![image](img/image-1.png)
+
 ## Installation
 
 ```shell=
