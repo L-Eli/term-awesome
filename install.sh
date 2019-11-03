@@ -245,6 +245,7 @@ echo ""
     "prettier"
     "vetur"
     "html"
+    "emmet"
     "css"
   )
   dependencies=""
