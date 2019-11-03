@@ -103,7 +103,7 @@ I used [vim-plug](https://github.com/junegunn/vim-plug) to manage my plugins for
 
 * [`coc-nvim`](https://github.com/neoclide/coc.nvim) - Intellisense engine for vim8 & neovim, full language server protocol support as VSCode!
 
-* [`nord-vim`(https://github.com/arcticicestudio/nord-vim) - My theme of vim.
+* [`nord-vim`](https://github.com/arcticicestudio/nord-vim) - My theme of vim.
 
 * [`vim-gitgutter`](https://github.com/airblade/vim-gitgutter) - Shows a git diff in the gutter.
 
