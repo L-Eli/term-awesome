@@ -86,10 +86,6 @@ let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled=1
 
 
-" theme
-let g:solarized_termcolors=256
-
-
 " supertab
 let g:SuperTabMappingForward='<s-tab>'
 let g:SuperTabMappingBackward='<tab>'
