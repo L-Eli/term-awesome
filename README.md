@@ -43,7 +43,7 @@ $ ./install.sh
 [git](https://git-scm.com) is most popular VCS (Version Control System).
 
 ### `python3`
-[Python](https://www.python.org) is a programming language that lets you work quickly and integrate systems more effectively.
+[python](https://www.python.org) is a programming language that lets you work quickly and integrate systems more effectively.
 
 ### `node`
 
