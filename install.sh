@@ -41,6 +41,7 @@ echo ""
       "node"
       "python3"
       "ctags"
+      "ack"
     )
   
     # Installing packages
