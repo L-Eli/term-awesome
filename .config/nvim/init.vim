@@ -13,6 +13,7 @@ Plug 'matze/vim-move'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mileszs/ack.vim'
 
 " Themes
 Plug 'arcticicestudio/nord-vim'
@@ -100,6 +101,10 @@ nmap <C-k> <Plug>MoveLineUp
 " vim nerdtree syntastic highlight
 let g:NERDTreeExtensionHighlightColor={}
 let g:NERDTreeExtensionHighlightColor['vue']='42b883'
+
+
+" ack
+nnoremap <C-f> :Ack!<Space>
 
 
 " git gutter
