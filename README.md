@@ -49,6 +49,9 @@ $ ./install.sh
 
 [node.js](https://nodejs.org) is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
+### `ack`
+[ack](https://beyondgrep.com) is a search tool designed for code. It's built to be a replacement for `grep` with higher speed and more options.
+
 
 ## Customized
 
@@ -102,6 +105,8 @@ I used [vim-plug](https://github.com/junegunn/vim-plug) to manage my plugins for
 * [`vim-nerdtree-syntax-highlight`](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight) - Extra syntax and highlight for nerdtree files.
 
 * [`coc-nvim`](https://github.com/neoclide/coc.nvim) - Intellisense engine for vim8 & neovim, full language server protocol support as VSCode!
+
+* [`ack.vim`](https://github.com/mileszs/ack.vim) - Run ack search tool from Vim. Just use `ctrl + a` and type the word or pattern which you want to search for.
 
 * [`nord-vim`](https://github.com/arcticicestudio/nord-vim) - My theme of vim.
 
