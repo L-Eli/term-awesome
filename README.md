@@ -90,9 +90,9 @@ I used [vim-plug](https://github.com/junegunn/vim-plug) to manage my plugins for
   * `\ + 1~8` - Go to specific tab via number.
   * `\ + 9` - Go to the last tab.
   
-* [`auto-pair`](https://github.com/jiangmiao/auto-pairs) - Insert or delete brackets, parens, quotes in pair.
+* [`auto-pairs`](https://github.com/jiangmiao/auto-pairs) - Insert or delete brackets, parens, quotes in pair.
 
-* [`ctrlp`](https://github.com/kien/ctrlp.vim) - Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
+* [`ctrlp.vim`](https://github.com/kien/ctrlp.vim) - Full path fuzzy file, buffer, mru, tag, ... finder for Vim.
 
 * [`supertab`](https://github.com/ervandew/supertab) - Perform all your vim insert mode completions with Tab.
 
@@ -104,7 +104,7 @@ I used [vim-plug](https://github.com/junegunn/vim-plug) to manage my plugins for
 
 * [`vim-nerdtree-syntax-highlight`](https://github.com/tiagofumo/vim-nerdtree-syntax-highlight) - Extra syntax and highlight for nerdtree files.
 
-* [`coc-nvim`](https://github.com/neoclide/coc.nvim) - Intellisense engine for vim8 & neovim, full language server protocol support as VSCode!
+* [`coc.nvim`](https://github.com/neoclide/coc.nvim) - Intellisense engine for vim8 & neovim, full language server protocol support as VSCode!
 
 * [`ack.vim`](https://github.com/mileszs/ack.vim) - Run ack search tool from Vim. Just use `ctrl + a` and type the word or pattern which you want to search for.
 
