@@ -65,8 +65,6 @@ nmap <silent> <C-t> :TagbarToggle <CR>
 
 let g:tagbar_width=winwidth('%') / 5
 
-"autocmd VimEnter * TagbarToggle
-
 
 " airline
 nnoremap <Leader>[ :bprevious<CR>
