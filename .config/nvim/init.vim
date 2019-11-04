@@ -96,6 +96,7 @@ vmap <C-k> <Plug>MoveBlockUp
 nmap <C-j> <Plug>MoveLineDown
 nmap <C-k> <Plug>MoveLineUp
 
+
 " vim nerdtree syntastic highlight
 let g:NERDTreeExtensionHighlightColor={}
 let g:NERDTreeExtensionHighlightColor['vue']='42b883'
