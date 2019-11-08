@@ -39,6 +39,7 @@ call plug#end()
 
 " nerdtree
 nnoremap <silent> <C-a> :NERDTreeToggle <CR>
+nmap <Leader>r :NERDTreeRefreshRoot <CR>
 
 let NERDTreeShowHidden=3
 
