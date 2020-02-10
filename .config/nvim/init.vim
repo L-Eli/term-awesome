@@ -47,6 +47,8 @@ let NERDTreeShowHidden=3
 " nerdcommenter
 nmap <C-_> <Leader>c<space>
 
+let NERDSpaceDelims=1
+
 
 " syntastic
 set statusline+=%#warningmsg#
