@@ -190,6 +190,10 @@ echo ""
   tmux source $HOME/.tmux.conf
   echo "🏆 Sourced .tmux.conf successfully!"
   echo ""
+  echo "Sourcing .tmux.conf.local ......."
+  tmux source $HOME/.tmux.config.local
+  echo "🏆 Sourced .tmux.conf.local successfully!"
+  echo ""
   echo "-------------------------------------------------------"
   
   # Copy neovim config
