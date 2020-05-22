@@ -141,6 +141,8 @@ set background=dark
 
 """ fold
 nnoremap <space> za <CR>
+nnoremap f zM <CR>
+nnoremap F zR <CR>
 set foldmethod=indent
 set foldlevel=100
 
