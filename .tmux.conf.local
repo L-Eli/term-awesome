@@ -287,4 +287,4 @@ unbind -n C-k
 bind a send-prefix
 bind ` last-window
 set-option -g prefix `
-set-option repeat-time 0
+set-option -g repeat-time 0
