@@ -45,9 +45,10 @@ let NERDTreeShowHidden=3
 
 
 " nerdcommenter
-nmap <C-_> <Leader>c<space>
+map <C-_> <Leader>c<space>
 
-let NERDSpaceDelims=1
+let g:NERDSpaceDelims=1
+let g:NERDCompactSexyComs = 1
 
 
 " syntastic
