@@ -43,6 +43,10 @@ echo ""
       "ctags"
       "ack"
     )
+
+    # Installing fira code fonts
+    brew tap homebrew/cask-fonts
+    brew install --cask --font-fira-code-nerd-font
   
     # Installing packages
     for i in "${packages[@]}"; do
